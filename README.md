@@ -1,5 +1,4 @@
-# fn-compose
-[![](https://badge.juejin.im/entry/5c6582f9e51d457fcc5abbef/likes.svg?style=flat-square)](https://juejin.im/post/5c657b6f6fb9a049e702a044)
+# fn-onion
 compose functions to one which will be excuted like onion.
 re-factor from koajs/compose so that you can custom args.
 
@@ -27,3 +26,6 @@ let fn = compose(middleware)
 fn()
 // 1 2 3 4
 ```
+
+## badge
+[![](https://badge.juejin.im/entry/5c6582f9e51d457fcc5abbef/likes.svg?style=flat-square)](https://juejin.im/post/5c657b6f6fb9a049e702a044)
