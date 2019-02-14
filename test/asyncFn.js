@@ -1,12 +1,12 @@
 const assert = require('assert')
-const compose = require('../index')
+const compose = require('../src/index')
 
 let ArrAsyncPush = function(arr, value){
   return new Promise(function(resolve, reject){
-      setTimeout(() => {
-          arr.push(value)
-          resolve()
-      }, 10)
+    setTimeout(() => {
+      arr.push(value)
+      resolve()
+    }, 10)
   })
 }
 

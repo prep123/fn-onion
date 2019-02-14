@@ -1,9 +1,14 @@
-function compose (middleware) {
+/**
+ * compose middleware
+ *
+ * @param {function array} middleware
+ * @return {function} composed fn
+ */
 
+function compose (middleware) {
   if (!Array.isArray(middleware)) {
     throw new TypeError('Middleware stack must be an array!')
   }
-  
   for (let fn of middleware) {
     if (typeof fn !== 'function') {
       throw new TypeError('Middleware must be composed of functions!')
@@ -29,6 +34,3 @@ function compose (middleware) {
 }
 
 module.exports = compose
-
-
-

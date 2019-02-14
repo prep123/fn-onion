@@ -1,5 +1,5 @@
 const assert = require('assert')
-const compose = require('../index')
+const compose = require('../src/index')
 
 it('should excute like onion', () => {
   let result = []
